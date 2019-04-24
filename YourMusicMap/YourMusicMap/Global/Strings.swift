@@ -22,6 +22,9 @@ struct ControllerIdentifier {
     static let SetSongViewController = "SetSongViewController"
     static let ProfileNavigationController = "ProfileNavigationController"
     static let UploadImageViewController = "UploadImageViewController"
+    static let PlaySongViewController = "PlaySongViewController"
+    static let SongListNavigationController = "SongListNavigationController"
+    static let SWRevealNavViewController = "SWRevealNavViewController"
 
 }
 struct StoryboardName {
@@ -37,6 +40,7 @@ struct  NIBName {
 struct  CellIdentifier {
     static let SideMenuTableViewCell = "SideMenuTableViewCell"
     static let SideMenuProfileTableViewCell = "SideMenuProfileTableViewCell"
+    static let SongTableViewCell = "SongTableViewCell"
     
 }
 

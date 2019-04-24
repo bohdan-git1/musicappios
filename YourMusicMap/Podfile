@@ -12,5 +12,13 @@ target 'YourMusicMap' do
    pod 'SwiftyJSON', '~> 4.0'
    pod 'MBProgressHUD', '~> 0.8'
    pod 'SDWebImage', '~>3.6'
+   pod 'Alamofire', '~> 4.2.0'
+   pod "MBCircularProgressBar"
+   pod 'FacebookSDK'
+   pod 'FacebookCore'
+   pod 'FacebookLogin'
+   pod 'GoogleSignIn'
+   pod 'BraintreeDropIn'
+   pod 'Braintree/PayPal'
 
 end

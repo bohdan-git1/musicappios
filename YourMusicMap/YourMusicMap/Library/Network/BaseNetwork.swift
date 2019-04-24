@@ -590,7 +590,7 @@ class BaseNetwork{
         do {
             audioData = try NSData(contentsOf: parameeters["audioPath"] as! URL, options: NSData.ReadingOptions.alwaysMapped)
         } catch _ {
-            audioData = NSData()
+            audioData = nil//NSData()
             //return
         }
         
@@ -611,13 +611,13 @@ class BaseNetwork{
         }
         else if requestMessage.contentType == ContentType.HTML {
             
-            request.httpBody = self.createBodyWithParametersForAudio(parameeters, filePathKey: parameeters["audiokey"] as? String, imageDataKey: audioData! as Data, boundary: boundary)
+            request.httpBody = self.createBodyWithParametersForAudio(parameeters, filePathKey: parameeters["audiokey"] as? String, imageDataKey: audioData as Data?, boundary: boundary)
             
         }
         
         
     }
-    func createBodyWithParametersForAudio(_ parameters: [String: AnyObject]?, filePathKey: String?, imageDataKey: Data, boundary: String) -> Data {
+    func createBodyWithParametersForAudio(_ parameters: [String: AnyObject]?, filePathKey: String?, imageDataKey: Data?, boundary: String) -> Data {
         let body = NSMutableData()
         
         if parameters != nil {
@@ -628,15 +628,16 @@ class BaseNetwork{
             }
         }
         
-        let filename = "file.m4a"
+        let filename = "file.mp3"
         let mimetype = "audio/mp3"
-        let keyName = "file"
+        let keyName = "track"
         body.appendString(string:"--\(boundary)\r\n")
         body.appendString(string:"Content-Disposition: form-data; name=\"\(keyName)\"; filename=\"\(filename)\"\r\n")
         body.appendString(string:"Content-Type: \(mimetype)\r\n\r\n")
-        body.append(imageDataKey)
+        if(imageDataKey != nil){
+        body.append(imageDataKey!)
         body.appendString(string:"\r\n")
-        
+        }
         
         body.appendString(string:"--\(boundary)--\r\n")
         

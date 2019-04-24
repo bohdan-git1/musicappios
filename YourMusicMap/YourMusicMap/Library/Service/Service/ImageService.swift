@@ -13,7 +13,7 @@ class ImageService : BaseService{
     //MARK:- Image Upload Api
     func uploadImage(requestMessage: RequestMessage, complete: @escaping ((_ responseMessage: ServiceResponseMessage)->Void)){
         
-        let homeURL = BASE_URL //+ URL_UPLOAD_IMAGE
+        let homeURL = BASE_URL + URL_UPLOAD_IMAGE
         
         let params = [
                       "imageKey":requestMessage.imageKey,

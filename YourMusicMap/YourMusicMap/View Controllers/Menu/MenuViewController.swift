@@ -53,6 +53,7 @@ extension MenuViewController:UITableViewDelegate,UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
         if let container = self.revealViewController().frontViewController as? MainContainerViewController{
             print("container exist \(container)")
             self.revealViewController().revealToggle(nil)
@@ -64,11 +65,11 @@ extension MenuViewController:UITableViewDelegate,UITableViewDataSource{
             if(indexPath.row == 1){
                 container.showHomeController()
             }
+            if(indexPath.row == 2){
+                container.showSongList()
+            }
             if(indexPath.row == 3){
-               let storyboard = UIStoryboard(name: StoryboardName.Registration, bundle: nil)
-                let vc = storyboard.instantiateViewController(withIdentifier: ControllerIdentifier.LoginViewController)
-                container.topBarHeight.constant = 0
-                self.navigationController?.pushViewController(vc, animated: true)
+               container.signOut()
             }
             
             

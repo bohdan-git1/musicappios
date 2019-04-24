@@ -23,6 +23,10 @@ class LoginViewController: BaseViewController {
         self.btnLogin.layer.cornerRadius = 5
         self.btnLogin.layer.borderWidth = 1
         self.btnLogin.layer.borderColor = AppColors.darkBlue.cgColor
+        
+//        self.txtPassword.text = "123456"
+//        self.txtEmail.text = "ghafartanveer@gmail.com"
+        
         // Do any additional setup after loading the view.
     }
     //MARK:- Functions
@@ -88,9 +92,9 @@ extension LoginViewController{
                         if let login = responseMessage.data as? LoginViewModel{
                             Global.shared.login = login
                             print(login.id)
-//                                let data = NSKeyedArchiver.archivedData(withRootObject: login)
-//                                UserDefaults.standard.set(data, forKey: LOGIN_KEY)
-//                                UserDefaults.standard.synchronize()
+                            let data = NSKeyedArchiver.archivedData(withRootObject: login)
+                            UserDefaults.standard.set(data, forKey: LOGIN_KEY)
+                            UserDefaults.standard.synchronize()
                                 self.showHomeController()
                             }else{
                                 self.showAlertVIew(message: "no user found", title: "")

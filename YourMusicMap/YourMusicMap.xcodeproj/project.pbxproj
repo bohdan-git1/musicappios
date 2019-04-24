@@ -13,6 +13,13 @@
 		B6109865226DD21300CE36FE /* MLPAutoCompleteTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = B610985D226DD21300CE36FE /* MLPAutoCompleteTextField.m */; };
 		B6109866226DD21300CE36FE /* MVPlaceSearchTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = B610985F226DD21300CE36FE /* MVPlaceSearchTextField.m */; };
 		B6109867226DD21300CE36FE /* PlaceDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = B6109861226DD21300CE36FE /* PlaceDetail.m */; };
+		B61AAA89226EE83700F6D42D /* CircularProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61AAA88226EE83700F6D42D /* CircularProgressBar.swift */; };
+		B61AAA8D226EE8A900F6D42D /* PlaySongViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61AAA8C226EE8A900F6D42D /* PlaySongViewController.swift */; };
+		B61AAA8F226EEBF500F6D42D /* SongListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61AAA8E226EEBF500F6D42D /* SongListViewController.swift */; };
+		B61AAA91226EEC6000F6D42D /* SongViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61AAA90226EEC6000F6D42D /* SongViewModel.swift */; };
+		B61AAA93226EED3700F6D42D /* SongListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61AAA92226EED3700F6D42D /* SongListViewModel.swift */; };
+		B61AAA95226EEF9100F6D42D /* SongTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61AAA94226EEF9100F6D42D /* SongTableViewCell.swift */; };
+		B61AAA99226F449000F6D42D /* TSLibraryImport.m in Sources */ = {isa = PBXBuildFile; fileRef = B61AAA98226F448F00F6D42D /* TSLibraryImport.m */; };
 		B65EA10D226DBC6E00679091 /* SongService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65EA10C226DBC6E00679091 /* SongService.swift */; };
 		B668BDF42268632400504EA8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B668BDF32268632400504EA8 /* AppDelegate.swift */; };
 		B668BDF62268632400504EA8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B668BDF52268632400504EA8 /* ViewController.swift */; };
@@ -90,6 +97,8 @@
 		B668BEC42268959F00504EA8 /* SideMenuProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B668BEC32268959F00504EA8 /* SideMenuProfileTableViewCell.swift */; };
 		B668BEC72268A17400504EA8 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B668BEC62268A17400504EA8 /* HomeViewController.swift */; };
 		B668BECA2268B36200504EA8 /* SetSongViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B668BEC92268B36200504EA8 /* SetSongViewController.swift */; };
+		B6E5D2DD226F4C5C00A4C44F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6E5D2DC226F4C5C00A4C44F /* GoogleService-Info.plist */; };
+		B6E5D2DF227072B700A4C44F /* PaymentService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E5D2DE227072B700A4C44F /* PaymentService.swift */; };
 		B6E815AC2269AA2900658FF5 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E815AB2269AA2900658FF5 /* ProfileViewController.swift */; };
 		B6FB98B7226A017600A08A3F /* NetworkRequestMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6FB989F226A017600A08A3F /* NetworkRequestMessage.swift */; };
 		B6FB98B8226A017600A08A3F /* NetworkResponseMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6FB98A0226A017600A08A3F /* NetworkResponseMessage.swift */; };
@@ -102,8 +111,6 @@
 		B6FB98BF226A017600A08A3F /* ServiceResponseMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6FB98AC226A017600A08A3F /* ServiceResponseMessage.swift */; };
 		B6FB98C0226A017600A08A3F /* ImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6FB98AE226A017600A08A3F /* ImageService.swift */; };
 		B6FB98C1226A017600A08A3F /* AlumniService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6FB98AF226A017600A08A3F /* AlumniService.swift */; };
-		B6FB98C2226A017600A08A3F /* OrderService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6FB98B0226A017600A08A3F /* OrderService.swift */; };
-		B6FB98C3226A017600A08A3F /* AdditionalServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6FB98B1226A017600A08A3F /* AdditionalServices.swift */; };
 		B6FB98C4226A017600A08A3F /* CustomerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6FB98B2226A017600A08A3F /* CustomerService.swift */; };
 		B6FB98C5226A017600A08A3F /* UIPickerViewController+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6FB98B4226A017600A08A3F /* UIPickerViewController+Utils.swift */; };
 		B6FB98C6226A017600A08A3F /* UIColor+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6FB98B5226A017600A08A3F /* UIColor+Utils.swift */; };
@@ -154,6 +161,14 @@
 		B6109860226DD21300CE36FE /* PlaceObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlaceObject.h; sourceTree = "<group>"; };
 		B6109861226DD21300CE36FE /* PlaceDetail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlaceDetail.m; sourceTree = "<group>"; };
 		B6109862226DD21300CE36FE /* MVPlaceSearchTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVPlaceSearchTextField.h; sourceTree = "<group>"; };
+		B61AAA88226EE83700F6D42D /* CircularProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProgressBar.swift; sourceTree = "<group>"; };
+		B61AAA8C226EE8A900F6D42D /* PlaySongViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaySongViewController.swift; sourceTree = "<group>"; };
+		B61AAA8E226EEBF500F6D42D /* SongListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongListViewController.swift; sourceTree = "<group>"; };
+		B61AAA90226EEC6000F6D42D /* SongViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongViewModel.swift; sourceTree = "<group>"; };
+		B61AAA92226EED3700F6D42D /* SongListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongListViewModel.swift; sourceTree = "<group>"; };
+		B61AAA94226EEF9100F6D42D /* SongTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongTableViewCell.swift; sourceTree = "<group>"; };
+		B61AAA97226F448F00F6D42D /* TSLibraryImport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSLibraryImport.h; sourceTree = "<group>"; };
+		B61AAA98226F448F00F6D42D /* TSLibraryImport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSLibraryImport.m; sourceTree = "<group>"; };
 		B65EA10C226DBC6E00679091 /* SongService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongService.swift; sourceTree = "<group>"; };
 		B668BDF02268632400504EA8 /* YourMusicMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YourMusicMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B668BDF32268632400504EA8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -246,6 +261,8 @@
 		B668BEC32268959F00504EA8 /* SideMenuProfileTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuProfileTableViewCell.swift; sourceTree = "<group>"; };
 		B668BEC62268A17400504EA8 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		B668BEC92268B36200504EA8 /* SetSongViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetSongViewController.swift; sourceTree = "<group>"; };
+		B6E5D2DC226F4C5C00A4C44F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B6E5D2DE227072B700A4C44F /* PaymentService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentService.swift; sourceTree = "<group>"; };
 		B6E815AB2269AA2900658FF5 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		B6FB989F226A017600A08A3F /* NetworkRequestMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkRequestMessage.swift; sourceTree = "<group>"; };
 		B6FB98A0226A017600A08A3F /* NetworkResponseMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkResponseMessage.swift; sourceTree = "<group>"; };
@@ -258,8 +275,6 @@
 		B6FB98AC226A017600A08A3F /* ServiceResponseMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceResponseMessage.swift; sourceTree = "<group>"; };
 		B6FB98AE226A017600A08A3F /* ImageService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageService.swift; sourceTree = "<group>"; };
 		B6FB98AF226A017600A08A3F /* AlumniService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlumniService.swift; sourceTree = "<group>"; };
-		B6FB98B0226A017600A08A3F /* OrderService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderService.swift; sourceTree = "<group>"; };
-		B6FB98B1226A017600A08A3F /* AdditionalServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdditionalServices.swift; sourceTree = "<group>"; };
 		B6FB98B2226A017600A08A3F /* CustomerService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomerService.swift; sourceTree = "<group>"; };
 		B6FB98B4226A017600A08A3F /* UIPickerViewController+Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIPickerViewController+Utils.swift"; sourceTree = "<group>"; };
 		B6FB98B5226A017600A08A3F /* UIColor+Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Utils.swift"; sourceTree = "<group>"; };
@@ -340,6 +355,32 @@
 			path = MLPAutoCompleteTextField;
 			sourceTree = "<group>";
 		};
+		B61AAA8A226EE86600F6D42D /* CircularProgressBar */ = {
+			isa = PBXGroup;
+			children = (
+				B61AAA88226EE83700F6D42D /* CircularProgressBar.swift */,
+			);
+			path = CircularProgressBar;
+			sourceTree = "<group>";
+		};
+		B61AAA8B226EE88D00F6D42D /* PlaySong */ = {
+			isa = PBXGroup;
+			children = (
+				B61AAA8C226EE8A900F6D42D /* PlaySongViewController.swift */,
+				B61AAA8E226EEBF500F6D42D /* SongListViewController.swift */,
+			);
+			path = PlaySong;
+			sourceTree = "<group>";
+		};
+		B61AAA96226F448F00F6D42D /* TSLibraryImport */ = {
+			isa = PBXGroup;
+			children = (
+				B61AAA97226F448F00F6D42D /* TSLibraryImport.h */,
+				B61AAA98226F448F00F6D42D /* TSLibraryImport.m */,
+			);
+			path = TSLibraryImport;
+			sourceTree = "<group>";
+		};
 		B668BDE72268632400504EA8 = {
 			isa = PBXGroup;
 			children = (
@@ -365,6 +406,7 @@
 		B668BDF22268632400504EA8 /* YourMusicMap */ = {
 			isa = PBXGroup;
 			children = (
+				B6E5D2DC226F4C5C00A4C44F /* GoogleService-Info.plist */,
 				B6FB98C8226A02A400A08A3F /* Model */,
 				B6FB989D226A017600A08A3F /* Library */,
 				B668BEBF226894FC00504EA8 /* View */,
@@ -405,6 +447,7 @@
 		B668BE2122686C2000504EA8 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				B61AAA8B226EE88D00F6D42D /* PlaySong */,
 				B6E815AA2269AA0D00658FF5 /* Profile */,
 				B668BECB2268B78D00504EA8 /* SignUp */,
 				B668BEC82268B34400504EA8 /* Login */,
@@ -444,6 +487,8 @@
 		B668BE342268849D00504EA8 /* ThirdParty */ = {
 			isa = PBXGroup;
 			children = (
+				B61AAA96226F448F00F6D42D /* TSLibraryImport */,
+				B61AAA8A226EE86600F6D42D /* CircularProgressBar */,
 				B6109854226DD21200CE36FE /* MVPlaceSearchTextField */,
 				B6FB98CB226A06FA00A08A3F /* MKProgress */,
 				B668BE352268849D00504EA8 /* TPKeyboardAvoiding */,
@@ -639,6 +684,7 @@
 			children = (
 				B668BEC12268952900504EA8 /* SideMenuTableViewCell.swift */,
 				B668BEC32268959F00504EA8 /* SideMenuProfileTableViewCell.swift */,
+				B61AAA94226EEF9100F6D42D /* SongTableViewCell.swift */,
 			);
 			path = TableViewCell;
 			sourceTree = "<group>";
@@ -748,10 +794,9 @@
 			children = (
 				B6FB98AE226A017600A08A3F /* ImageService.swift */,
 				B6FB98AF226A017600A08A3F /* AlumniService.swift */,
-				B6FB98B0226A017600A08A3F /* OrderService.swift */,
-				B6FB98B1226A017600A08A3F /* AdditionalServices.swift */,
 				B6FB98B2226A017600A08A3F /* CustomerService.swift */,
 				B65EA10C226DBC6E00679091 /* SongService.swift */,
+				B6E5D2DE227072B700A4C44F /* PaymentService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -770,6 +815,8 @@
 			isa = PBXGroup;
 			children = (
 				B6FB98C9226A02B700A08A3F /* LoginViewModel.swift */,
+				B61AAA90226EEC6000F6D42D /* SongViewModel.swift */,
+				B61AAA92226EED3700F6D42D /* SongListViewModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -918,6 +965,7 @@
 				B668BEA82268849D00504EA8 /* Lato-SemiboldItalic.ttf in Resources */,
 				B668BEA42268849D00504EA8 /* Lato-LightItalic.ttf in Resources */,
 				B668BEA92268849D00504EA8 /* Lato-HairlineItalic.ttf in Resources */,
+				B6E5D2DD226F4C5C00A4C44F /* GoogleService-Info.plist in Resources */,
 				B668BEAF2268849D00504EA8 /* OFL.txt in Resources */,
 				B668BEAE2268849D00504EA8 /* Lato-MediumItalic.ttf in Resources */,
 				B668BEA72268849D00504EA8 /* Lato-Black.ttf in Resources */,
@@ -985,6 +1033,7 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-YourMusicMap/Pods-YourMusicMap-resources.sh",
 				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
 				"${PODS_ROOT}/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle",
+				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
@@ -992,6 +1041,7 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GooglePlaces.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -1007,6 +1057,18 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-YourMusicMap/Pods-YourMusicMap-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/Braintree/Braintree.framework",
+				"${BUILT_PRODUCTS_DIR}/BraintreeDropIn/BraintreeDropIn.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FacebookCore/FacebookCore.framework",
+				"${BUILT_PRODUCTS_DIR}/FacebookLogin/FacebookLogin.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMOAuth2/GTMOAuth2.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/MBCircularProgressBar/MBCircularProgressBar.framework",
 				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
@@ -1015,6 +1077,18 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Braintree.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BraintreeDropIn.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookLogin.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMOAuth2.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBCircularProgressBar.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
@@ -1036,10 +1110,11 @@
 				B668BE8E2268849D00504EA8 /* CosmosAccessibility.swift in Sources */,
 				B668BE9E2268849D00504EA8 /* BReachability.swift in Sources */,
 				B6FB98C5226A017600A08A3F /* UIPickerViewController+Utils.swift in Sources */,
-				B6FB98C2226A017600A08A3F /* OrderService.swift in Sources */,
 				B668BEC42268959F00504EA8 /* SideMenuProfileTableViewCell.swift in Sources */,
 				B668BEA02268849D00504EA8 /* FXBlurView.m in Sources */,
+				B6E5D2DF227072B700A4C44F /* PaymentService.swift in Sources */,
 				B668BE7E2268849D00504EA8 /* BaseCollectionViewController.swift in Sources */,
+				B61AAA91226EEC6000F6D42D /* SongViewModel.swift in Sources */,
 				B6FB98D9226A06FA00A08A3F /* MKProgressBackgroundView.swift in Sources */,
 				B668BE8F2268849D00504EA8 /* CosmosText.swift in Sources */,
 				B668BE832268849D00504EA8 /* BaseCollectionViewCell.swift in Sources */,
@@ -1048,14 +1123,15 @@
 				B668BE992268849D00504EA8 /* RightToLeft.swift in Sources */,
 				B6FB98BA226A017600A08A3F /* ResponseHandler.swift in Sources */,
 				B668BE932268849D00504EA8 /* CosmosLocalizedRating.swift in Sources */,
-				B6FB98C3226A017600A08A3F /* AdditionalServices.swift in Sources */,
 				B6FB98C4226A017600A08A3F /* CustomerService.swift in Sources */,
 				B668BE2522687D8600504EA8 /* LoginViewController.swift in Sources */,
 				B668BE962268849D00504EA8 /* CosmosRating.swift in Sources */,
+				B61AAA89226EE83700F6D42D /* CircularProgressBar.swift in Sources */,
 				B668BE922268849D00504EA8 /* CosmosLayers.swift in Sources */,
 				B6FB98BF226A017600A08A3F /* ServiceResponseMessage.swift in Sources */,
 				B668BE8C2268849D00504EA8 /* StarFillMode.swift in Sources */,
 				B668BE9D2268849D00504EA8 /* CodeInputView.swift in Sources */,
+				B61AAA99226F449000F6D42D /* TSLibraryImport.m in Sources */,
 				B6109853226DC59900CE36FE /* UploadImageViewController.swift in Sources */,
 				B6109866226DD21300CE36FE /* MVPlaceSearchTextField.m in Sources */,
 				B668BE872268849D00504EA8 /* TPKeyboardAvoidingTableView.m in Sources */,
@@ -1083,6 +1159,7 @@
 				B668BE892268849D00504EA8 /* TPKeyboardAvoidingCollectionView.m in Sources */,
 				B6FB98C1226A017600A08A3F /* AlumniService.swift in Sources */,
 				B668BE842268849D00504EA8 /* BaseNavigationController.swift in Sources */,
+				B61AAA8D226EE8A900F6D42D /* PlaySongViewController.swift in Sources */,
 				B668BE9F2268849D00504EA8 /* CustomIOSAlertView.m in Sources */,
 				B6FB98C7226A017600A08A3F /* String+Utils.swift in Sources */,
 				B668BE7B2268849D00504EA8 /* Global.swift in Sources */,
@@ -1100,18 +1177,21 @@
 				B668BE972268849D00504EA8 /* CosmosSettings.swift in Sources */,
 				B668BE882268849D00504EA8 /* TPKeyboardAvoidingScrollView.m in Sources */,
 				B668BDF62268632400504EA8 /* ViewController.swift in Sources */,
+				B61AAA95226EEF9100F6D42D /* SongTableViewCell.swift in Sources */,
 				B668BDF42268632400504EA8 /* AppDelegate.swift in Sources */,
 				B65EA10D226DBC6E00679091 /* SongService.swift in Sources */,
 				B6FB98DA226A06FA00A08A3F /* MKProgressViewController.swift in Sources */,
 				B6109863226DD21300CE36FE /* PlaceObject.m in Sources */,
 				B6FB98D6226A06FA00A08A3F /* MKProgress.swift in Sources */,
 				B668BE952268849D00504EA8 /* CosmosTouch.swift in Sources */,
+				B61AAA8F226EEBF500F6D42D /* SongListViewController.swift in Sources */,
 				B668BE852268849D00504EA8 /* BaseView.swift in Sources */,
 				B668BE982268849D00504EA8 /* CosmosTouchTarget.swift in Sources */,
 				B668BEBE226893FB00504EA8 /* MainContainerViewController.swift in Sources */,
 				B668BE9A2268849D00504EA8 /* CosmosView.swift in Sources */,
 				B6FB98D8226A06FA00A08A3F /* MKProgressBaseView.swift in Sources */,
 				B668BE8D2268849D00504EA8 /* StarLayer.swift in Sources */,
+				B61AAA93226EED3700F6D42D /* SongListViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1290,15 +1370,66 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 34VL7Q74FC;
 				INFOPLIST_FILE = YourMusicMap/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"c++\"",
+					"-l\"z\"",
+					"-framework",
+					"\"Accelerate\"",
+					"-framework",
+					"\"Alamofire\"",
+					"-framework",
+					"\"CoreData\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"CoreImage\"",
+					"-framework",
+					"\"CoreLocation\"",
+					"-framework",
+					"\"CoreTelephony\"",
+					"-framework",
+					"\"CoreText\"",
+					"-framework",
+					"\"GLKit\"",
+					"-framework",
+					"\"GoogleMaps\"",
+					"-framework",
+					"\"GoogleMapsBase\"",
+					"-framework",
+					"\"GoogleMapsCore\"",
+					"-framework",
+					"\"GooglePlaces\"",
+					"-framework",
+					"\"ImageIO\"",
+					"-framework",
+					"\"MBCircularProgressBar\"",
+					"-framework",
+					"\"MBProgressHUD\"",
+					"-framework",
+					"\"OpenGLES\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"SDWebImage\"",
+					"-framework",
+					"\"SwiftyJSON\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"UIKit\"",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.Ripidzz.YourMusicMap;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "YourMusicMap/YourMusicMap-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -1310,15 +1441,66 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 34VL7Q74FC;
 				INFOPLIST_FILE = YourMusicMap/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"c++\"",
+					"-l\"z\"",
+					"-framework",
+					"\"Accelerate\"",
+					"-framework",
+					"\"Alamofire\"",
+					"-framework",
+					"\"CoreData\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"CoreImage\"",
+					"-framework",
+					"\"CoreLocation\"",
+					"-framework",
+					"\"CoreTelephony\"",
+					"-framework",
+					"\"CoreText\"",
+					"-framework",
+					"\"GLKit\"",
+					"-framework",
+					"\"GoogleMaps\"",
+					"-framework",
+					"\"GoogleMapsBase\"",
+					"-framework",
+					"\"GoogleMapsCore\"",
+					"-framework",
+					"\"GooglePlaces\"",
+					"-framework",
+					"\"ImageIO\"",
+					"-framework",
+					"\"MBCircularProgressBar\"",
+					"-framework",
+					"\"MBProgressHUD\"",
+					"-framework",
+					"\"OpenGLES\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"SDWebImage\"",
+					"-framework",
+					"\"SwiftyJSON\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"UIKit\"",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.Ripidzz.YourMusicMap;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "YourMusicMap/YourMusicMap-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

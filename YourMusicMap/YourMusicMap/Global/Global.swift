@@ -11,6 +11,9 @@ class Global {
     }
     var disableMenuGesture:Bool? = false
     var login = LoginViewModel()
+    var songList = SongListViewModel()
+    var isFbLogin:Bool? = false
+    var clientToken : String = ""
     
   }
 

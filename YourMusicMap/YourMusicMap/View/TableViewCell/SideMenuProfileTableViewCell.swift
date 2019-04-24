@@ -20,6 +20,7 @@ class SideMenuProfileTableViewCell: BaseTableViewCell {
     }
     
     func configure(){
+        self.imgProfile.layer.cornerRadius = self.imgProfile.frame.height/2
         self.lblEmail.text = Global.shared.login.email
         self.lblName.text  = Global.shared.login.name
         self.setImageWithUrl(imageView: self.imgProfile, url: Global.shared.login.image,profile: "dpRound")

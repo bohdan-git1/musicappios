@@ -56,8 +56,23 @@ class MainContainerViewController: BaseViewController {
         self.viewContainer.addSubview(controller.view)
         controller.didMove(toParent: self)
     }
- 
+    func showSongList()  {
+        let storyBoard = UIStoryboard(name: StoryboardName.Main, bundle: nil)
+        var controller = BaseNavigationController()
+        controller = storyBoard.instantiateViewController(withIdentifier: ControllerIdentifier.SongListNavigationController) as! BaseNavigationController
+        addChild(controller)
+        controller.view.frame = self.viewContainer.bounds
+        self.viewContainer.addSubview(controller.view)
+        controller.didMove(toParent: self)
+    }
 
+    func signOut(){
+        UserDefaults.standard.set(nil, forKey: LOGIN_KEY)
+        UserDefaults.standard.synchronize()
+        let storyboard = UIStoryboard(name: StoryboardName.Registration, bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: ControllerIdentifier.LoginViewController)
+            self.navigationController?.pushViewController(vc, animated: true)
+    }
     
 
     

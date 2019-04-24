@@ -97,19 +97,22 @@ let BASE_URL = "http://mashghol.com/yourmusicmap/public/api/"
 
 
 
+let URL_MAKE_TRACK_TRANSACTION  = "make_track_transaction"
+let URL_GENERATE_TOKEN          = "generate_token"
+let URL_GET_SONGS_LIST          = "get_user_song_list"
+let URL_UPLOAD_SONG             = "add_song_on_location"
+let URL_UPLOAD_IMAGE            = "update_image"
+let URL_LOGIN                   = "login"
+let URL_Signup                  = "signup"
+let URL_CREATE_ACCOUNT          = "create_customer"
+let URL_CHECK_TRACK_AVALIBLE    = "is_track_available"
 
-
-
-let URL_UPLOAD_SONG = "add_song_on_location"
-let URL_LOGIN = "login"
-let URL_Signup = "signup"
-let URL_CREATE_ACCOUNT = "create_customer"
-
+let clientToken = "eyJ2ZXJzaW9uIjoyLCJhdXRob3JpemF0aW9uRmluZ2VycHJpbnQiOiI3NTAxMDdmYzEyNWE1Y2E1ZDE2YjYwMTgxZTAyYmI2MDM5OThiYzQyMmMzZTRjNTg0YTAxM2RkY2RjMDBiMWIyfGNyZWF0ZWRfYXQ9MjAxOS0wNC0yNFQxMDoxMjowNy45MTU3MDY3NDIrMDAwMFx1MDAyNm1lcmNoYW50X2lkPXJmcHF3YnMyMnc0Mnk5cGNcdTAwMjZwdWJsaWNfa2V5PTN0NzhzaGd6dzZidzQ5YjUiLCJjb25maWdVcmwiOiJodHRwczovL2FwaS5zYW5kYm94LmJyYWludHJlZWdhdGV3YXkuY29tOjQ0My9tZXJjaGFudHMvcmZwcXdiczIydzQyeTlwYy9jbGllbnRfYXBpL3YxL2NvbmZpZ3VyYXRpb24iLCJncmFwaFFMIjp7InVybCI6Imh0dHBzOi8vcGF5bWVudHMuc2FuZGJveC5icmFpbnRyZWUtYXBpLmNvbS9ncmFwaHFsIiwiZGF0ZSI6IjIwMTgtMDUtMDgifSwiY2hhbGxlbmdlcyI6W10sImVudmlyb25tZW50Ijoic2FuZGJveCIsImNsaWVudEFwaVVybCI6Imh0dHBzOi8vYXBpLnNhbmRib3guYnJhaW50cmVlZ2F0ZXdheS5jb206NDQzL21lcmNoYW50cy9yZnBxd2JzMjJ3NDJ5OXBjL2NsaWVudF9hcGkiLCJhc3NldHNVcmwiOiJodHRwczovL2Fzc2V0cy5icmFpbnRyZWVnYXRld2F5LmNvbSIsImF1dGhVcmwiOiJodHRwczovL2F1dGgudmVubW8uc2FuZGJveC5icmFpbnRyZWVnYXRld2F5LmNvbSIsImFuYWx5dGljcyI6eyJ1cmwiOiJodHRwczovL29yaWdpbi1hbmFseXRpY3Mtc2FuZC5zYW5kYm94LmJyYWludHJlZS1hcGkuY29tL3JmcHF3YnMyMnc0Mnk5cGMifSwidGhyZWVEU2VjdXJlRW5hYmxlZCI6ZmFsc2UsInBheXBhbEVuYWJsZWQiOnRydWUsInBheXBhbCI6eyJkaXNwbGF5TmFtZSI6IllvdXJkZXIiLCJjbGllbnRJZCI6bnVsbCwicHJpdmFjeVVybCI6Imh0dHA6Ly9leGFtcGxlLmNvbS9wcCIsInVzZXJBZ3JlZW1lbnRVcmwiOiJodHRwOi8vZXhhbXBsZS5jb20vdG9zIiwiYmFzZVVybCI6Imh0dHBzOi8vYXNzZXRzLmJyYWludHJlZWdhdGV3YXkuY29tIiwiYXNzZXRzVXJsIjoiaHR0cHM6Ly9jaGVja291dC5wYXlwYWwuY29tIiwiZGlyZWN0QmFzZVVybCI6bnVsbCwiYWxsb3dIdHRwIjp0cnVlLCJlbnZpcm9ubWVudE5vTmV0d29yayI6dHJ1ZSwiZW52aXJvbm1lbnQiOiJvZmZsaW5lIiwidW52ZXR0ZWRNZXJjaGFudCI6ZmFsc2UsImJyYWludHJlZUNsaWVudElkIjoibWFzdGVyY2xpZW50MyIsImJpbGxpbmdBZ3JlZW1lbnRzRW5hYmxlZCI6dHJ1ZSwibWVyY2hhbnRBY2NvdW50SWQiOiJ5b3VyZGVyIiwiY3VycmVuY3lJc29Db2RlIjoiVVNEIn0sIm1lcmNoYW50SWQiOiJyZnBxd2JzMjJ3NDJ5OXBjIiwidmVubW8iOiJvZmZsaW5lIn0="
 
 let kFacebookURL = "fb://"
 let kTwitterURL = "twitter://"
 let kInstagramURL = "instagram://app"
-
+let GOOGLE_CLIENT_ID = "121606477888-s7n78pbas9bsbdgc3cil719lkjpc1no7.apps.googleusercontent.com"
 
 
 struct AppColors

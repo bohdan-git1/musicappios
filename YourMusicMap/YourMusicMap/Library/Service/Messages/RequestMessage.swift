@@ -93,7 +93,11 @@ class RequestMessage: ServiceRequestMessage {
     var windowSides : String = ""
     var NumberOfWindows : String = ""
     var audioPath : URL? = nil
-    var audioKey : String = ""
+    var audiokey : String = ""
+    var nonse : String = ""
+    var songID : String = ""
+    var userID : Int = 0
+    var price : Double = 1
     
 }
 

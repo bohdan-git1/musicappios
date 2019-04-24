@@ -12,5 +12,6 @@
 #import "SWRevealViewController.h"
 #import "MVPlaceSearchTextField.h"
 #include "CustomIOSAlertView.h"
+#import "TSLibraryImport.h"
 
 #endif /* YourMusicMap_Bridging_Header_h */

@@ -19,17 +19,25 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="appICON" translatesAutoresizingMaskIntoConstraints="NO" id="SDF-sS-vOA">
-                                <rect key="frame" x="112.5" y="192" width="150" height="150"/>
+                                <rect key="frame" x="87.5" y="233.5" width="200" height="200"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="150" id="LYW-5H-IS1"/>
-                                    <constraint firstAttribute="height" constant="150" id="gh1-AV-ygX"/>
+                                    <constraint firstAttribute="width" constant="200" id="LYW-5H-IS1"/>
+                                    <constraint firstAttribute="height" constant="200" id="gh1-AV-ygX"/>
                                 </constraints>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WELCOME" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qSD-Bd-FIh">
+                                <rect key="frame" x="91" y="156.5" width="193.5" height="47"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="39"/>
+                                <color key="textColor" red="0.18039215689999999" green="0.4549019608" blue="0.77647058820000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="qSD-Bd-FIh" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="NJw-8P-oqP"/>
                             <constraint firstItem="SDF-sS-vOA" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Ujs-wf-uma"/>
-                            <constraint firstItem="SDF-sS-vOA" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" multiplier="0.8" id="VfT-3P-9EN"/>
+                            <constraint firstItem="SDF-sS-vOA" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="VfT-3P-9EN"/>
+                            <constraint firstItem="SDF-sS-vOA" firstAttribute="top" secondItem="qSD-Bd-FIh" secondAttribute="bottom" constant="30" id="sbm-7k-x3l"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
